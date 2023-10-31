@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Tahoma;
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+}
+
+.tabs li {
+  padding: 20px;
+  background-color: rgb(121, 189, 253);
+  cursor: pointer;
+  font-weight: bolder;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  transition: 0.5s;
+  color: white;
+}
+
+.tabs li.active,
+.tabs li:hover {
+  background-color: rgb(13, 138, 255);
+  border-bottom: none;
+}
+
+.content {
+  background-color: rgb(13, 138, 255);
+  color: white;
+  font-weight: bolder;
+}
+
+.content>div {
+  padding: 20px;
+}
+
+.content>div:not(:first-child) {
+  display: none;
+}
